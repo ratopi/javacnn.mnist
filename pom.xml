@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<!-- -->
+
+	<groupId>javacnn</groupId>
+	<artifactId>javacnn.mnist</artifactId>
+	<version>1-SNAPSHOT</version>
+
+	<description>Example for use JavaCNN with MNIST dataset</description>
+
+	<!-- -->
+
+	<dependencies>
+
+		<dependency>
+			<groupId>javacnn</groupId>
+			<artifactId>javacnn</artifactId>
+			<version>1-SNAPSHOT</version>
+		</dependency>
+
+		<dependency>
+			<groupId>de.ratopi</groupId>
+			<artifactId>read-mnist</artifactId>
+			<version>2.1</version>
+		</dependency>
+	</dependencies>
+
+	<!-- -->
+
+	<repositories>
+		<repository>
+			<id>ratopi.de releases</id>
+			<url>http://ratopi.github.io/maven/releases/</url>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+		</repository>
+	</repositories>
+
+	<!-- -->
+
+	<build>
+
+		<plugins>
+
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.7.0</version>
+				<configuration>
+					<source>1.8</source>
+					<target>1.8</target>
+					<compilerArgument>-deprecation</compilerArgument>
+					<encoding>UTF-8</encoding>
+				</configuration>
+			</plugin>
+
+		</plugins>
+
+	</build>
+
+</project>

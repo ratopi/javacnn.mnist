@@ -1,0 +1,4 @@
+/.idea/
+*.iml
+/target/
+/data/t*-*ubyte.gz
